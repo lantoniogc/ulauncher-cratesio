@@ -1,0 +1,26 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "cratesio",
+  "description": "Search for Rust crates at crates.io",
+  "developer_name": "Antonio Garcia",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 1.5
+  },
+  "preferences": [
+    {
+      "id": "cratesio_kw",
+      "type": "keyword",
+      "name": "cratesio",
+      "description": "Search for Rust crates",
+      "default_value": "cratesio"
+    },
+    {
+      "id": "cratesio_max_search_result_size",
+      "type": "select",
+      "name": "Maximum number of results",
+      "default_value": "5",
+      "options": ["3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    }
+  ]
+}
