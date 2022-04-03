@@ -55,7 +55,7 @@ class ItemEnterEventListener(EventListener):
         return RenderResultListAction([ExtensionResultItem(icon='images/icon.png',
                                                            name=data['crates']['name'],
                                                            description=data['crates']['description'],
-                                                           on_enter=OpenUrlAction(data['crates']['documentation']))])
+                                                           on_enter=OpenUrlAction(data['crates']['repository']))])
 
 
 if __name__ == '__main__':
